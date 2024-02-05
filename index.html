@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsiveWebDesign</title>
+  </head>
+  <body>
+    <!-- Responsive Text Size -->
+    <!-- The text size can be set with a "vw" unit, which means the "viewport width".
+
+That way the text size will follow the size of the browser window: -->
+    <h1 style="font-size: 10vw">Hello World</h1>
+    <p>pixel vs rem vs %, vw, vh</p>
+    <!-- responsive images -->
+    <img
+      src="/images/img_girl.jpg"
+      alt=""
+      style="max-width: 100%; height: auto"
+    />
+    <!-- The HTML <picture> element allows you to define different images for different browser window sizes. -->
+    <picture>
+      <source srcset="/images/img_flowers.jpg" media="(max-width: 600px)" />
+      <source srcset="/images/img_flowers.jpg" media="(max-width: 1500px)" />
+      <source srcset="/images/img_flowers.jpg" />
+      <img src="/images/img_flowers.jpg" alt="Flowers" />
+    </picture>
+    <p>flex, grid(containers,parent-child), section, divs, semantic tags</p>
+    header nav form footer sidebar
+  </body>
+</html>

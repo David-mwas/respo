@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        width: 100vw;
+        color: white;
+        text-align: center;
+      }
+      .left,
+      .right {
+        float: left;
+        width: 20%; /* The width is 20%, by default */
+        height: 60px;
+      }
+      .left {
+        background: blue;
+      }
+      .right {
+        background: green;
+      }
+
+      .main {
+        color: gray;
+        float: left;
+        width: 60%; /* The width is 60%, by default */
+        height: 60px;
+        background: aliceblue;
+      }
+
+      /* Use a media query to add a breakpoint at 800px: */
+      @media screen and (max-width: 800px) {
+        .left,
+        .main,
+        .right {
+          width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">Left content</div>
+    <div class="main">Main content</div>
+    <div class="right">Right content</div>
+
+    
+  </body>
+</html>
